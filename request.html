@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Request - Global 3 Concept Ltd</title>
+
+<style>
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0d0d0d;
+    color:white;
+    padding:20px;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:10px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    padding:15px;
+    background:#00c896;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Request a Service</h2>
+
+<form name="service-request" method="POST" data-netlify="true">
+
+    <input type="hidden" name="form-name" value="service-request">
+
+    <label>Full Name</label>
+    <input type="text" name="name" required>
+
+    <label>Phone Number</label>
+    <input type="text" name="phone" required>
+
+    <label>Email Address</label>
+    <input type="email" name="email">
+
+    <label>Select Service Needed</label>
+    <select name="service" required>
+        <option value="">--Select--</option>
+        <option>CAC Registration</option>
+        <option>TIN Generation</option>
+        <option>SCUML Processing</option>
+        <option>Trademark</option>
+        <option>Export Licence</option>
+        <option>NIN Modification</option>
+        <option>Passport Processing</option>
+        <option>Business Coaching</option>
+        <option>Branding & Graphics</option>
+        <option>Ads & Digital Marketing</option>
+    </select>
+
+    <label>Additional Details</label>
+    <textarea name="message"></textarea>
+
+    <button type="submit">Submit Request</button>
+
+</form>
+
+</body>
+</html>
